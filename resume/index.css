@@ -1,0 +1,198 @@
+body, html {
+	margin: 0;
+	background-color: #EDEDED;
+
+}
+
+/*this is for the navbar*/
+.bg-dark {
+	transition: 0.5s ease-out;
+	background-color: transparent!important;
+}
+
+.bg-dark-scrolled{
+	transition: 0.5s ease-in;
+	background-color: #343A40 !important;
+	border-bottom: solid 5px #bd5d38!important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar {
+	border-radius: 0;
+	margin-bottom: 0;
+	/*16498C*/
+	border: 0;
+	color: #FFF;
+	padding: 1% 0;
+	font-size: 1.2em;
+	
+}
+
+#collapsibleNavbar {
+	margin-right: 10px; 
+}
+
+
+
+#name-color, #date-color{
+	color: #bd5d38!important;
+}
+
+.navbar .nav-item .nav-link {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+/*this is the intro parallax*/
+
+.pimg1 {
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100vh;
+}
+
+.pimg1{
+	background-image: url(jimmy.jpg);
+	height: 100vh;
+}
+
+
+/*formatting the text within the IMAGES*/
+.ptext{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	font-size: 27px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+
+}
+
+.ptext .border{
+	background-color: #111;
+	color: #fff;
+	padding: 20px;
+}
+
+.ptext .border.trans{
+	background-color: transparent;
+}
+
+/*this first section*/
+section {
+	margin-top: 40px;
+	border-bottom: solid 0.5px gray;
+}
+
+.container {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+h2 {
+	margin-bottom: 2rem;
+
+}
+
+/*Education*/
+.mr-3 {
+	margin-right: 3rem!important;
+}
+
+.edu{
+	width: 800px;
+}
+
+#Education p {
+	margin-bottom: 0;
+}
+
+/*Skills*/
+.dev-icons li i{
+	font-size: 75px;
+	color: #bd5d38!important;
+}
+
+.dev-icons li i:hover{
+	color: #E87245!important;
+}
+
+.bardiv {
+    height: 25px;
+    width: 0;
+    left: 0;
+    background-color: #bd5d38;
+    opacity: 0.5;
+    color: white;
+    border-radius: 3px;
+}
+
+i {
+    font-size: 50px;
+    color: #bd5d38 !important;
+}
+
+
+/*carousel*/
+#Interests{
+	margin-top: 40px;
+
+}
+
+.cpic{
+	filter: brightness(50%);
+	max-height: 100%;
+	min-width: 100%;
+
+}
+
+
+/*footer*/
+footer {
+	width: 100%;
+	background-color: #212529;
+	padding: 3%;
+	color: #FFF;
+}
+
+.fa {
+	padding: 15px;
+	color: #FFF;
+	font-size: 2rem!important;
+}
+
+.fa:hover {
+	color: #D5D5D5;
+	text-decoration: none;
+}
+
+footer h3 {
+	color: #bd5d38;
+}
+
+
+
+
+/*responsive*/
+@media (max-width: 900px) {
+	.fa {
+		font-size: 20px;
+		padding: 10px;
+	}
+}
+
+@media (max-width: 600px) {
+
+	.navbar-brand {
+	margin-left: 1rem;
+	}
+} 

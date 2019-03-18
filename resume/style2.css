@@ -1,0 +1,252 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    /* overflow-x: hidden; */
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+section {
+    margin-top: 50px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.bottom-sep {
+    border-bottom: solid 0.5px gray;
+}
+
+.parallax {
+    height: 400px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.parallax-text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* for animate.css effects */
+
+.slideanimate {
+    visibility: hidden;
+}
+
+.slide {
+    visibility: visible;
+}
+
+/* NAVBAR */
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.nav-trans {
+    transition: 0.5s ease-out;
+    background-color: transparent!important;
+}
+
+.nav-scrolled {
+    transition: 0.5s ease-in;
+    background-color: #343A40 !important;
+    border-bottom: solid 5px #bd5d38!important;
+}
+
+/* intro */
+
+.pimg1 {
+    background-image: url(./assets/jimmy.jpg);
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 1);
+    filter: brightness(85%);
+    text-align: center;
+    color: #fff;
+}
+
+.ptext1 {
+    width: 40%;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#resumelink {
+    color: #fff;
+    border-color: #fff;
+}
+
+#resumelink:hover {
+    transition: 0.3s ease-in;
+    background-color: rgba(255, 255, 255, 0.212);
+}
+
+/* Education */
+
+/* #Education {
+    background-image: url(classroom.jpg);
+    filter: brightness(60%);
+} */
+
+/* Experience */
+
+#Experience {
+    background-image: url(./assets/experience.jpg);
+    filter: brightness(60%);
+}
+
+.box {
+    height: 100px;
+    background-color: #7952b3;
+    border: 1px solid white;
+}
+
+.timeline-section {
+    position: relative;
+}
+
+.timeline-section:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 3px;
+    transform: translateX(-50%);
+    background-color: #ccc;
+}
+
+.timeline-pointer {
+    position: relative;
+}
+
+.timeline-pointer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 7px solid #ccc;
+    transform: translateX(-50%);
+    background-color: #fff;
+    z-index: 1;
+}
+
+@media (max-width: 576px) {
+    .timeline-section:after, .timeline-pointer::after {
+        display: none;
+    }
+}
+
+/* Skills */
+
+#Skills {
+    background-image: url(./assets/coding.jpg);
+    filter: brightness(30%);
+}
+
+/* Projects */
+
+#Projects {
+    background-image: url(./assets/messydesk.jpg);
+    filter: brightness(30%);
+}
+
+.box-shadow {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16)
+}
+
+.box-shadow:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.24)
+}
+
+/* Hobbies */
+
+#Hobbies {
+    height: 100vh;
+    background-color: #EDEEEF;
+}
+
+.hobtext {
+    opacity: 0;
+    transition: 1s;
+    color: #fff;
+}
+
+#hobpics:hover .hobtext {
+    opacity: 1;
+    /* filter: brightness(100%); */
+}
+
+#hobpics:hover img {
+    opacity: 0;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background-color: #212529;
+    padding: 3%;
+    color: #FFF;
+}
+
+.fab {
+    padding: 15px;
+    color: #FFF;
+    font-size: 2rem!important;
+}
+
+.fab:hover {
+    color: #D5D5D5;
+    text-decoration: none;
+}
+
+footer h3 {
+    color: #bd5d38;
+}
+
+@media only screen and (max-width: 768px) {
+    /* .navbar-brand{
+        margin-left: 10px;
+    } */
+    /* .nav-trans {
+        transition: 0.5s ease-in;
+        background-color: #343A40 !important;
+        border-bottom: solid 5px #bd5d38!important;
+    } */
+
+    .slideanimate {
+        visibility: visible;
+    }
+    .text-right {
+        text-align: left!important;
+    }
+    #Hobbies {
+        height: 150vh;
+        background-color: #EDEEEF;
+    }
+    #hobpics {
+        margin: 0 auto;
+    }
+}

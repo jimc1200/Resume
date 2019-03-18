@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jimmy's Resume</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style2.css" type="text/css">
+
+    <!-- chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+    <!-- animate.css -->
+    <link rel="stylesheet" href="animate.css">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light nav-trans fixed-top"
+        style="padding:10px 0; width: 100vw;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Jimmy <span>Teng</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About">About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Hobbies">Hobbies</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 100vh intro parallax -->
+    <div class="pimg1 parallax">
+        <div class="ptext1">
+            <h2 style="margin-bottom:0!important;">Hi, I'm Jimmy!</h2><br>
+            <p><em>Welcome to my website</em></p>
+            <a id="resumelink" class="btn btn-outline-secondary" href="./assets/resume.pdf" target="_blank">Resume</a>
+        </div>
+    </div>
+
+
+    <!-- About -->
+    <section id="About" class="container text-center bottom-sep " data-direction="fadeInUp">
+        <h2>About me</h2>
+        <p>Phone : 0903692697 &nbsp;|&nbsp; Email : b04701154@ntu.edu.tw</p>
+        <br>
+        <div class="justify-content-center text-center">
+            <p class="text-left">&nbsp; &nbsp; &nbsp; &nbsp; Hi! I am a senior majoring in Business Administration at
+                National Taiwan University. My focus is in data analysis, marketing, & supply chain. I have
+                intermediate coding experience in Python, R, MySQL, and some web development languages. <br>
+                &nbsp; &nbsp; &nbsp; &nbsp; I am familiar with marketing and strategic management frameworks and I am
+                well trained
+                at analyzing case studies and projects through structured problem solving skills. In addition, I can use
+                my
+                coding skills to implement solutions and present my ideas.<br>
+                &nbsp; &nbsp; &nbsp; &nbsp; I studied abroad in California for 7 years, therefore I am
+                proficient in the English language. I also have basic Spanish comprehension skills because I studied it
+                for 3 years while I was in the U.S.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Education -->
+    <!-- <section id="Education" class="parallax">
+        <h2 class="text-center parallax-text" style="color: rgba(39, 38, 38, 0.883);">Education</h2>
+    </section> -->
+    <section id="Education" class="container ">
+        <div class="container" style="max-width:900px;">
+            <div class="row justify-content-center">
+                <h2>Education</h2>
+                <ul class="list-unstyled">
+                    <li class="media my-4">
+                        <img class="mr-3" src="./assets/uni.png" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">National Taiwan University</h5>
+                            <p><em>Bachelor's Degree in Business Administration (2015~2019)</em></p>
+                            <ul>
+                                <li>Honors: Academic Excellence Award 2015~2016</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="media my-4">
+                        <img class="mr-3" src="./assets/course.png" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Relevant Courses</h5>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6 mt-3 ">
+                                        <p><em>Programming / Data Analysis</em></p>
+                                        <ul>
+                                            <li>Programming for Business Computing -- Python</li>
+                                            <li>Statistical Data Analysis for Business and Management -- R</li>
+                                            <li>Marketing Analytics -- R</li>
+                                            <li>Database Management -- SQL </li>
+                                            <li>Web Design for Storytelling -- HTML, CSS, Bootstrap, jQuery, Javascript
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <p><em>Business-related</em></p>
+                                        <ul>
+                                            <li>Strategic Management</li>
+                                            <li>Marketing Management</li>
+                                            <li>Operations Management</li>
+                                            <li>Financial Accounting</li>
+                                            <li>Managerial Accounting</li>
+                                            <li>Macroeconomics</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="Experience" class="parallax">
+        <h2 class="text-center parallax-text" style="color:#fff;">Experience</h2>
+    </section>
+
+    <section>
+        <!-- <h2 class="text-center">Experience</h2> -->
+        <div class="container">
+            <div class="timeline-section">
+                <div class="row my-4 timeline-pointer">
+                    <div class="col-sm-6 text-right slideanimate " data-direction="slideInLeft">
+                        <h4 class="mb-0">Intern</h4>
+                        <div class="subheading mb-3"><em>Dell Worldwide Procurement Team</em></div>
+                        <p>Developed a program using Python to assist in the automation of weekly reports. Had the
+                            opportunity
+                            to combine programming skills with domain knowledge about supply chain and procurement. </p>
+                    </div>
+                    <div class="col-sm-6 slideanimate " data-direction="slideInRight">
+                        <span class="text-primary" id="date-color"><strong>July 2018 - October 2018</strong></span>
+                    </div>
+                </div>
+
+                <div class="row timeline-pointer my-4 flex-sm-row-reverse">
+                    <div class="col-sm-6 slideanimate " data-direction="slideInRight">
+                        <h4 class="mb-0">Co-captain</h4>
+                        <div class="subheading mb-3"><em>NTUBA Basketball Team</em></div>
+                        <p>Lead a team of 30 players for an entire year. Developed a positive mindset and strong
+                            leadership skills.
+                            Learned how to stay disciplined and motivate teammates to excel. Overall, this
+                            experience made me a more
+                            resilient person on and off the court and gave me the chance to give what I have to the
+                            sport I love. </p>
+                    </div>
+                    <div class="col-sm-6 text-right slideanimate " data-direction="slideInLeft">
+                        <span class="text-primary" id="date-color"><strong>July 2017 - June 2018</strong></span>
+                    </div>
+                </div>
+
+                <div class="row timeline-pointer my-4">
+                    <div class="col-sm-6 text-right slideanimate " data-direction="slideInLeft">
+                        <h4 class="mb-0">Chief of Finance</h4>
+                        <div class="subheading mb-3"><em>NTUBA Student Association</em></div>
+                        <p>Experience planning and allocating budget for different activities throughout
+                            the year. Helped me be
+                            meticulous when dealing with budgeting reports & reimbursements. Also, practiced
+                            communication skills
+                            when settling disputes over
+                            the budget allocation. </p>
+                    </div>
+                    <div class="col-sm-6 slideanimate " data-direction="slideInRight">
+                        <span class="text-primary" id="date-color"><strong>July 2017 - July 2018</strong></span>
+                    </div>
+                </div>
+
+                <div class="row timeline-pointer my-4 flex-sm-row-reverse">
+                    <div class="col-sm-6 slideanimate " data-direction="slideInRight">
+                        <h4 class="mb-0">Research Assistant</h4>
+                        <div class="subheading mb-3"><em>Professor Liu Yi-Ching</em></div>
+                        <p>Assisted the professor in conducting experiments on her research
+                            topic regarding social
+                            psychology. Practiced summarizing thesis papers and reporting them to the professor
+                            during weekly discussions.</p>
+                    </div>
+                    <div class="col-sm-6 text-right slideanimate " data-direction="slideInLeft">
+                        <span class="text-primary" id="date-color"><strong>September 2017 - February
+                                2018</strong></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="Skills" class="parallax">
+        <h2 class="text-center parallax-text" style="color:#fff;">Skills</h2>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 my-4"><canvas id="progChart" height="300px" width="400px"></canvas></div>
+                <div class="col-lg-6 my-4"><canvas id="webChart" height="300px" width="400px"></canvas></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="Projects" class="parallax">
+        <h2 class="text-center parallax-text" style="color:#fff; position: relative;">Projects</h2>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <!-- <h2 class="text-center">Projects</h2> -->
+            <div class="row">
+                <div class="col-lg-4 my-4">
+                    <div class="card h-100 box-shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Internship Webscrapper</h5>
+                            <em>Python</em>
+                            <p class="card-text">Used Python to webscrap internship opporutnities from multiple
+                                websites(i.e. 104, 1111, Yourator)
+                                and create a GUI that allows users to filter the types of internships they want, based
+                                on location,
+                                salary, working hours, etc.
+                            </p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="./assets/internship_webscrap.pdf" target="_blank" class="btn btn-outline-primary ">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 my-4">
+                    <div class="card h-100 box-shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Pharmacy Data Analysis</h5>
+                            <em>Python, R, Google API</em>
+                            <p> 
+                                Used R to build statistical models that can predict the revenue of 
+                                stores and product categories. Initially, because
+                                the raw data provided by the pharmacy was limited, therefore, I used Python and Google
+                                Maps API to acquire more data about each
+                                store location.
+                            </p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="./assets/pharmacy.pdf" target="_blank" class="btn btn-outline-primary ">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 my-4">
+                    <div class="card h-100 box-shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Amazon Case Study</h5>
+                            <em>Marketing</em>
+                            <p class="card-text">Used marketing theories and frameworks such as PEST analysis, SWOT,
+                                STP, 4P to break down Amazon's strategy.
+                                Additionally, we also analyzed Amazon's rivals in the online retailing industry and
+                                figured out its competitive advantage
+                                in relation to them.
+                            </p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="./assets/amazon.pdf" target="_blank" class="btn btn-outline-primary ">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 my-4">
+                    <div class="card h-100 box-shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Airborne Case Study</h5>
+                            <em>Strategic Management</em>
+                            <p class="card-text">Using frameworks from strategic management, we looked at Airbourne and
+                                the express industry. In addition, we did a cost analysis with its competitors based
+                                on the figures given in the case.</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="./assets/airborne.pdf" target="_blank" class="btn btn-outline-primary ">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 my-4">
+                    <div class="card h-100 box-shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Restaurant Landing Page</h5>
+                            <em>Bootstrap</em>
+                            <p>Practiced using Bootstrap to create landing page for a restaurant. Used different styling
+                                & grid methods
+                                and included a Google Map and a form in it.
+                            </p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="restaurant.html" target="_blank" class="btn btn-outline-primary ">View Project</a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!-- Hobbies -->
+
+        <section id="Hobbies" class="text-center">
+            <h2 class="p-3">Hobbies</h2>
+            <div class="container " style="height:50vh">
+                <div class="d-lg-flex justify-content-around">
+                    <div id="hobpics" class="p-3 my-5"
+                        style="height:300px; width:300px;background-image: url(./assets/bball.jpg);filter: brightness(50%); background-size: cover; background-position: center center;">
+                        
+                        <div class="hobtext">
+                            <em>Basketball</em>
+                            <p>I love the game of basketball. To me, it is more than a sport. It's a lifestyle.
+                                Basketball has taught me discipline, motivation, and passion. And I will carry taught
+                                into whatever I do.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="hobpics" class="p-3 my-5"
+                        style="height:300px; width:300px;background-image: url(./assets/cooking.jpg);filter: brightness(50%); background-size: cover; background-position: center center;">
+                        <div class="hobtext">
+                            <em>Cooking</em>
+                            <p>Cooking is a hobby that helps me stay focused and live in the moment.
+                                Learning how to cook healthy is how I take care of myself. I also enjoy cooking for 
+                                others, because I like to share.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="hobpics" class="p-3 my-5"
+                        style="height:300px; width:300px;background-image: url(./assets/reading.jpg);filter: brightness(50%); background-size: cover; background-position: center center;">
+                        <div class="hobtext">
+                            <em>Reading</em>
+                            <p>Reading is an escape from the pandemonium of the outside world. 
+                                I read and reflect upon myself, and I often find comfort within the words.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="container-fluid text-center">
+            <div class="row">
+                <div class="col-12">
+                    <h3>Connect</h3>
+                    <a href="https://www.facebook.com/jimmy.chao.52"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/ji_mstagrm/"><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- bootstrap js -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+
+        <!-- navbar scroll effect -->
+        <script>
+            $(window).scroll(function () {
+                $('nav').toggleClass('nav-scrolled', $(this).scrollTop() > 200);
+            });
+        </script>
+
+        <!-- section fadeInUp effect -->
+        <script>
+            $(function () {
+                $(window).scroll(function () {
+                    var WIDTH_LIMIT = 768;
+                    var windowWidth = window.innerWidth;
+                    if (windowWidth > WIDTH_LIMIT){
+                        $(".slideanimate").each(function () {
+                            var winTop = $(window).scrollTop();
+                            var winh = $(window).height();
+                            var objpos = $(this).offset().top;
+                            if (objpos < winTop + winh * 0.7) {
+                                $(this).addClass("animated slide " + $(this).data("direction"));
+
+                            }
+                            if (winTop == 0) {
+                                $(this).removeClass("animated slide " + $(this).data("direction"));
+
+                            }
+                        });
+                    }
+                });
+            });
+        </script>
+
+
+
+        <!-- skills chart -->
+        <script>
+            Chart.defaults.global.defaultFontSize = 15;
+            // Chart.defaults.global.defaultFontColor = '#ddd';
+            var ctx = document.getElementById("progChart").getContext('2d');
+            var chartdata = {
+                type: 'bar',
+                data: {
+                    labels: ["Python", "R", "SQL"],
+                    datasets: [{
+                        label: 'Level of Proficiency',
+                        data: [8, 7, 4.5],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            // 'rgba(75, 192, 192, 0.2)',
+                            // 'rgba(153, 102, 255, 0.2)',
+                            // 'rgba(255, 159, 64, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255,99,132,1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            // 'rgba(75, 192, 192, 1)',
+                            // 'rgba(153, 102, 255, 1)',
+                            // 'rgba(255, 159, 64, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    },
+                    responsive: true, // default true
+                    labels: {
+                        fontSize: 18
+                    },
+                    title: {
+                        display: true,
+                        text: 'Programming',
+                        fontSize: 20
+                    },
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                min: 0,
+                                max: 10
+                            }
+                        }]
+                    }
+
+                }
+            };
+            var inView = false;
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    var winTop = $(window).scrollTop();
+                    var winh = $(window).height();
+                    var objpos = $("#progChart").offset().top;
+                    if (objpos < winTop + winh * 0.5 && !inView) {
+                        new Chart(ctx, chartdata);
+                        inView = true;
+                    }
+
+                });
+            });
+        </script>
+
+        <script>
+
+            // Chart.defaults.global.defaultFontColor = '#ddd';
+            var ctx1 = document.getElementById("webChart").getContext('2d');
+            var chartdata1 = {
+                type: 'horizontalBar',
+                data: {
+                    labels: ["HTML", "CSS", "Bootstrap", "jQuery", "Javascript", "Node.js"],
+                    datasets: [{
+                        label: 'Level of Proficiency',
+                        data: [85, 80, 89, 63, 58, 70],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 159, 64, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255,99,132,1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255, 159, 64, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    },
+                    responsive: true, // default true
+                    labels: {
+                        fontSize: 18
+                    },
+                    title: {
+                        display: true,
+                        text: 'Web Development',
+                        fontSize: 20
+                    },
+                    scales: {
+                        xAxes: [{
+                            ticks: {
+                                min: 30,
+                                max: 100
+                            }
+                        }]
+                    }
+                }
+            };
+            var inView1 = false;
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    var winTop1 = $(window).scrollTop();
+                    var winh1 = $(window).height();
+                    var objpos1 = $("#webChart").offset().top;
+                    if (objpos1 < winTop1 + winh1 * 0.5 && !inView1) {
+                        new Chart(ctx1, chartdata1);
+                        inView1 = true;
+                    }
+
+                });
+            });
+        </script>
+
+
+</body>
+
+</html>
